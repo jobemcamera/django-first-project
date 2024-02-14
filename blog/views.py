@@ -1,8 +1,13 @@
 from django.shortcuts import render
+from blog.data import posts
 
 # Create your views here.
 
-context = {'text': 'Estamos no Blog', 'title': 'Blog'}
+context = {
+    'title': 'Blog',
+    'text': 'Estamos no Blog',
+    'posts': posts
+}
 
 
 def blog(request):
