@@ -1,8 +1,12 @@
-<article class="post">
-  <header>
-    <h2 class="post__title">{{post.title}}</h2>
-  </header>
-  <div class="post__body">
-    {{post.body}}
-  </div>
+<article class="post single-post">
+  <a href="{% url "blog:post" post.id %}">
+    <header>
+      <h2 class="post__title">
+        {{post.title}}
+      </h2>
+    </header>
+    <div class="post__body">
+      {{post.body}}
+    </div>
+  </a>
 </article>

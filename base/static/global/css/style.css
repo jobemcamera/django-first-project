@@ -25,7 +25,7 @@ body {
 }
 
 @media (min-width: 600px) {
-  .content {
+  .content:not(:has(.single-post)) {
     grid-template-columns: repeat(auto-fill, minmax(42rem, 1fr));
   }
 }
@@ -37,6 +37,11 @@ body {
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.post:hover { 
+.post:hover {
   scale: 1.02;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
